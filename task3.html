@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="task3.js" defer></script>
+    <style>
+        #box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            text-align: center;
+            line-height: 150px;
+            margin: 20px;
+            border: 2px solid #ccc;
+            cursor: pointer;
+        }
+        .hover-effect {
+            width: 150px;
+            height: 150px;
+            background-color: lightgreen;
+            margin: 20px;
+            border: 2px solid #ccc;
+        }
+        .button {
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onclick="changeColor()">Click me to change color</div>
+    <div id="hoverBox" class="hover-effect">Hover over me</div>
+    <button class="button" onclick="resizeBox()">Resize Box</button>
+    <button class="button" onclick="resetBox()">Reset Styles</button>
+    <button class="button" onclick="changeTextColor()">Change Text Color</button>
+</body>
+</html>
